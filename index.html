@@ -4,33 +4,347 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT ZONE Air Tours & Travels</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        .logo {
-            max-width: 200px;
-            margin: 20px auto;
-        }
-        .info {
-            margin: 20px auto;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/ittripzone/it-tripzone/refs/heads/main/Logo.png" alt="Company Logo" class="logo">
-    <h1>IT ZONE Air Tours & Travels</h1>
-    <h3> Travel with IT ZONE, <i></i>next your chance to explore the world...</i></h3>
-    <div class="info">
-        <p>Address: 563, West Rasulpur, Kamrangirchar, Dhaka-1211</p>
-        <p>Email: contact@tripzone.live</p>
-        <p>Phone: +8809 639 139 239</p>
-       <p>Cell: +8801330804266</p>
-      <p>Cell: +8801330804267</p>
-      <p>Cell: +8801330804268</p>
-    </div>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="https://raw.githubusercontent.com/ittripzone/it-tripzone/refs/heads/main/Logo.png" alt="IT ZONE Air Tours & Travels" class="menu-logo" style="width:20%;">
+                <h1 class="logo">IT ZONE Air Tours & Travels</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>IT ZONE Air Tours & Travels</h2>
+            <h3>Travel with IT ZONE, next your chance to explore the world</h3>
+            <!-- <p>Book your dream vacation today with our exclusive offers!</p> -->
+            <br>
+            <address>
+                563, West Rasulpur, Kamrangirchar, Dhaka-1211
+                <br>Email: contact@tripzone.live
+                <br>Phone: +8809 639 139 239
+                <br>Cell: +8801330804266
+                <br>Cell: +8801330804267
+                <br>Cell: +8801330804268
+            </address>
+            <br>
+            <a href="#packages" class="btn">View Packages</a>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <!-- <img src="images/paris.jpg" alt="Paris"> -->
+                    <h3>Hong Kong</h3>
+                    <p>Experience the city of love and its iconic landmarks.</p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/bali.jpg" alt="Bali"> -->
+                    <h3>Japan</h3>
+                    <p>Relax on stunning beaches and enjoy the vibrant culture.</p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/newyork.jpg" alt="New York"> -->
+                    <h3>South Korea</h3>
+                    <p>Explore the bustling city that never sleeps.</p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/paris.jpg" alt="Paris"> -->
+                    <h3>Georgia</h3>
+                    <p>Experience the city of love and its iconic landmarks.</p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/bali.jpg" alt="Bali"> -->
+                    <h3>UK</h3>
+                    <p>Relax on stunning beaches and enjoy the vibrant culture.</p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/newyork.jpg" alt="New York"> -->
+                    <h3>Schengen Country</h3>
+                    <p>Explore the bustling city that never sleeps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2>Travel Packages</h2>
+            <div class="package-cards">
+                <div class="card">
+                    <h3>Family Package</h3>
+                    <p>Perfect for a family getaway. Includes accommodation, meals, and activities.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="card">
+                    <h3>Honeymoon Package</h3>
+                    <p>Romantic destinations for newlyweds. Includes luxury accommodations.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="card">
+                    <h3>Adventure Package</h3>
+                    <p>For thrill-seekers and explorers. Includes guided tours and activities.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 IT ZONE Air Tours & Travels. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+<style>
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: #0078d7;
+    color: #fff;
+    padding: 1em 0;
+}
+
+.header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.header .nav ul li {
+    margin: 0 15px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+/*    color: #fff;*/
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+    background: #005bb5;
+}
+
+/* Destinations Section */
+.destinations {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.destinations h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Packages Section */
+.packages {
+    padding: 50px 0;
+    background: #f3f3f3;
+}
+
+.packages h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.package-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.package-cards .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.card button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background: #005bb5;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background: #005bb5;
+}
+
+/* Footer */
+.footer {
+    background: #0078d7;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+</style>
